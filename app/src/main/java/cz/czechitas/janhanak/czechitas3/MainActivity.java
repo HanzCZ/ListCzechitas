@@ -32,12 +32,10 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if () {
-                    Intent intent = new Intent(MainActivity.this,
-                            DetailActivity.class);
-                    intent.putExtra("data", animals.get(position));
-                    MainActivity.this.startActivity(intent);
-                }
+                Intent intent = new Intent(MainActivity.this,
+                        DetailActivity.class);
+                intent.putExtra("data", animals.get(position));
+                MainActivity.this.startActivity(intent);
             }
         });
 
